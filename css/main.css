@@ -1,0 +1,438 @@
+/*pink #D3325F*/
+
+/*white #C9C1AC*/
+
+.info {
+  background: #C9C1AC;
+}
+
+.info h2 {
+  word-spacing: 0.6rem
+}
+
+.info a {
+  transition: all 1s ease-in-out;
+}
+
+.info a:hover {
+  color: #242424;
+
+}
+
+/*header*/
+
+body {
+  /*  min-height: 100vh;*/
+  background: url(../img/body-bcg.jpeg)center/cover fixed no-repeat;
+  font-family: 'Mr Dafoe', cursive;
+  color: #C9C1AC;
+}
+
+.primary-color {
+  color: #D3325F;
+}
+
+#header {
+  min-height: calc(100vh - 94px);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner-bcg.jpeg)center/cover fixed no-repeat;
+  position: relative;
+}
+
+.height-90 {
+  min-height: calc(100vh - 94px);
+}
+
+.banner h1 {
+  border-top: 6px dotted #C9C1AC;
+  border-bottom: 6px dotted #C9C1AC;
+  animation: fromLeft;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.main-btn {
+  color: #D3325F;
+  font-size: 2rem;
+  border: 2px solid #D3325F;
+  transition: all 1s ease-in-out;
+
+}
+
+.main-btn:hover {
+  color: #242424;
+  border: 2px solid #C9C1AC;
+  background: #C9C1AC;
+
+}
+
+.sushi-btn {
+  animation: fromRight;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+
+}
+
+
+@keyframes fromRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+.header-link {
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  background: #C9C1AC;
+  border: 3px solid #C9C1AC;
+  border-radius: 10px;
+  transition: all 2s ease;
+  animation: fromBottom;
+  animation-duration: 4s;
+  animation-iteration-count: infinite
+}
+
+.header-link:hover {
+
+  color: #242424;
+}
+
+@keyframes fromBottom {
+  0% {
+    transform: translateY(-10px);
+
+  }
+  50% {
+    transform: translateY(10px)
+  }
+
+  100% {
+    transform: translateY(-10px);
+
+  }
+}
+
+/*navbar*/
+
+.navbar {
+  background: #C9C1AC;
+  padding: 20px 20px;
+  transition: all 1s ease;
+
+}
+
+.navbar-background {
+  padding: 5px 20px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.navbar-brand:hover {
+  color: #242424;
+}
+
+.nav-link {
+  color: #242424;
+  text-decoration: none;
+  transition: all 2s ease;
+  font-size: 23px;
+}
+
+.nav-link:hover {
+  color: #D3325F;
+}
+
+.nav-btn {
+  background: transparent;
+  color: #d3325f;
+  border: 2px solid #d3325f;
+  font-size: 23px;
+  transition: all 2s ease;
+}
+
+.nav-btn:hover {
+  color: #242424;
+  border: 2px solid #242424;
+  transform: rotate(10deg)
+}
+
+.toggler-btn {
+  border: 2px solid #d3325f;
+  padding: 5px;
+  transition: 2s all ease;
+}
+
+
+
+.bar {
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  background: #d3325f;
+  transition: all 0.5s ease;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-5px, -8px);
+}
+
+
+
+
+
+/*menu items*/
+
+.item-container {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+  transition: all 2s ease;
+
+}
+
+.item-img {
+  transition: all 2s ease-in-out;
+}
+
+.item-container:hover .item-img {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+.item-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #D3325F;
+  font-size: 2rem;
+  border-top: 3px solid #D3325F;
+  border-bottom: 3px solid #D3325F;
+  transition: 2s all ease-in-out;
+  opacity: 0;
+
+}
+
+.item-container:hover .item-link {
+  opacity: 1;
+
+}
+
+.item-link:hover {
+  color: #C9C1AC;
+  border: 3px solid #C9C1AC;
+  background: #C9C1AC;
+  color: #242424;
+
+}
+
+.item-container:hover {
+  outline: 10px solid #D3325F;
+  outline-offset: 0.8rem;
+}
+
+/*###################menu##############*/
+
+#menu {
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/banner-bcg.jpeg)center/cover fixed no-repeat;
+}
+
+.special {
+  border: 3px solid #D3325F;
+  position: relative;
+}
+
+.special-text {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  background: #D3325F;
+  padding: 0 0.4rem;
+
+}
+
+/*about*/
+
+.about-pictures {
+  position: relative!;
+
+}
+
+.about-image {
+  position: absolute;
+  width: 150px;
+  transition: all 2s ease;
+  opacity: 0.9;
+}
+
+.img-1 {
+  left: 0%;
+  top: 0%;
+
+}
+
+.img-2 {
+  left: 20%;
+  top: 20%;
+  z-index: 10;
+}
+
+.img-3 {
+  left: 40%;
+  top: 45%;
+  z-index: 20;
+}
+
+.img-4 {
+  left: 40%;
+  top: 0%;
+}
+
+.img-5 {
+  left: 0%;
+  top: 45%;
+}
+
+
+.about-image:hover {
+  outline: 10px solid #D3325F;
+  outline-offset: 0.8rem;
+  transform: scale(1.3) rotate(20deg);
+  z-index: 30;
+  opacity: 1;
+
+}
+
+.about-pictures:hover .about-image:not(:hover) {
+  opacity: 0.5;
+}
+
+/*reviews*/
+
+.review-item {
+  background: rgba(255, 255, 255, 0.7);
+  clip-path: polygon(5% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.review-img {
+  width: 150px;
+}
+
+.carousel-link {
+  background: red;
+}
+
+/*team*/
+
+.team-icons a {
+  color: #3B5998;
+
+  transition: all 2s ease-in-out;
+}
+
+.team-icons a:hover {
+  color: #242424;
+  transform: translateY(-5px);
+}
+
+/*contact*/
+
+.height-60 {
+  min-height: 60vh;
+}
+
+#contact .card {
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 2s ease;
+}
+
+#contact .card:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#contact .card-header {
+  color: #D3325F;
+}
+
+#contact .input-group-text {
+  background: #D3325F;
+  border-color: #D3325F;
+  color: #242424;
+}
+
+#contact .card input {
+  color: #606060;
+}
+
+#contact .card input::placeholder {
+  color: #606060;
+}
+
+.contact-btn {
+  color: #D3325F;
+  border-color: #D3325F;
+  background: transparent;
+  transition: all 2s ease-in-out;
+}
+
+.contact-btn:hover {
+  background: #C9C1AC;
+  color: #D3325F;
+  border-color: #C9C1AC;
+}
+
+/*footer*/
+
+#back-to-top {
+  background: #C9C1AC;
+  border-radius: 10px;
+}
+
+
+
+.scrollTop {
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+
+}
